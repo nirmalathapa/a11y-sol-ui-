@@ -1,6 +1,8 @@
-dist/
-www/
 loader/
+packages/*/node_modules/
+packages/*/dist/
+packages/*/www/
+packages/*/loader/
 
 *~
 *.sw[mnpcod]

@@ -1,7 +1,8 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
-  namespace: 'a11y-sol-ui',
+  namespace: 'a11y-sol-components',
   outputTargets: [
     {
       type: 'dist',
@@ -21,6 +22,7 @@ export const config: Config = {
     },
   ],
   testing: {
-    browserHeadless: "new",
+    browserHeadless: 'new',
   },
+  plugins: [sass()],
 };

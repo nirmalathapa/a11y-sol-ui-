@@ -1,0 +1,59 @@
+{
+  "name": "@a11y-sol/components",
+  "version": "0.0.1",
+  "description": "A11ySol Design system components",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/a11y-sol-ui/a11y-sol-ui.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/a11y-sol-ui/a11y-sol-ui.esm.js",
+      "require": "./dist/a11y-sol-ui/a11y-sol-ui.cjs.js"
+    },
+    "./loader": {
+      "import": "./loader/index.js",
+      "require": "./loader/index.cjs",
+      "types": "./loader/index.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nirmalathapa/a11y-sol-ui"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "storybook": "storybook dev --port 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@stencil/core": "^4.7.0",
+    "@stencil/sass": "3.0.12",
+    "@storybook/addon-essentials": "8.2.9",
+    "@storybook/web-components-webpack5": "8.2.9",
+    "@types/jest": "^29.5.6",
+    "@types/lodash": "4.17.7",
+    "@types/node": "^16.18.11",
+    "@types/prop-types": "15.7.12",
+    "jest": "^29.7.0",
+    "jest-cli": "^29.7.0",
+    "puppeteer": "23.2.1",
+    "sass": "1.77.8"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "glob": "11.0.0",
+    "lru-cache": "11.0.0",
+    "rimraf": "6.0.1"
+  }
+}

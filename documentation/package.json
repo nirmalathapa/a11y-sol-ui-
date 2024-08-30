@@ -1,0 +1,27 @@
+{
+  "name": "@a11y-sol/documentation",
+  "version": "0.0.1",
+  "description": "A11ySol Design System Documentation",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "1.8.0",
+    "@storybook/addon-essentials": "8.2.9",
+    "@storybook/addon-links": "8.2.9",
+    "@storybook/blocks": "8.2.9",
+    "@storybook/test": "8.2.9",
+    "@storybook/web-components": "8.2.9",
+    "@storybook/web-components-vite": "8.2.9",
+    "@storybook/web-components-webpack5": "8.2.9",
+    "lit": "3.2.0",
+    "storybook": "8.2.9",
+    "glob": "^10.0.0",
+    "rimraf": "^5.0.0",
+    "lru-cache": "^10.0.0"
+  },
+  "dependencies": {
+    "@a11y-sol/components": "file:../components"
+  }
+}
