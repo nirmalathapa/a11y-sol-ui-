@@ -10,6 +10,7 @@
     "test": "npm run test --workspaces --if-present",
     "storybook": "npm run storybook --workspace=packages/documentation",
     "build:components": "npm run build --workspace=packages/components",
-    "build:documentation": "npm run build-storybook --workspace=packages/documentation"
+    "build:documentation": "npm run build-storybook --workspace=packages/documentation",
+    "generate": "node generate-component.js"
   }
 }
